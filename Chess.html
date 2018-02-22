@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="ChessCss.css">
+    <title>Chess</title>
+</head>
+<body>
+    <table>
+        <tr class="number">
+            <th class="number"></th>
+            <th>a</th>
+            <th>b</th>
+            <th>c</th>
+            <th>d</th>
+            <th>e</th>
+            <th>f</th>
+            <th>g</th>
+            <th>h</th>
+            <th class="number"></th>
+        </tr>
+        <tr>
+            <th style="width: 24px!important;">8</th>
+            <th class="white" id="a8">
+                <img src="image/bR.png" alt="" class="blackBp bRookH" id="bRookA">
+            </th>
+            <th class="black" id="b8">
+                <img src="image/bN.png" alt="" class="blackBp bKnightB" id="bKnightB">
+            </th>
+            <th class="white" id="c8">
+                <img src="image/bB.png" alt="" class="blackBp" id="bBishopC">
+            </th>
+            <th class="black" id="d8">
+                <img src="image/bQ.png" alt="" class="blackBp" id="bQueen">
+            </th>
+            <th class="white" id="e8">
+                <img src="image/bK.png" alt="" class="blackBp" id="bKing">
+            </th>
+            <th class="black" id="f8">
+                <img src="image/bB.png" alt="" class="blackBp" id="bBishopF">
+            </th>
+            <th class="white" id="g8">
+                <img src="image/bN.png" alt="" class="blackBp bKnightB" id="bKnightG">
+            </th>
+            <th class="black" id="h8">
+                <img src="image/bR.png" alt="" class="blackBp bRookH" id="bRookH">
+            </th>
+            <th style="width: 24px!important;">8</th>
+        </tr>
+        <tr>
+            <th style="width: 24px!important;">7</th>
+            <th class="black" id="a7">
+                <img src="image/bP.png" alt="" class="blackBp asd" id="BpA">
+            </th>
+            <th class="white" id="b7">
+                <img src="image/bP.png" alt="" class="blackBp asd" id="BpB">
+            </th>
+            <th class="black" id="c7">
+                <img src="image/bP.png" alt="" class="blackBp asd" id="BpC">
+            </th>
+            <th class="white" id="d7">
+                <img src="image/bP.png" alt="" class="blackBp asd" id="BpD">
+            </th>
+            <th class="black" id="e7">
+                <img src="image/bP.png" alt="" class="blackBp asd" id="BpE">
+            </th>
+            <th class="white" id="f7">
+                <img src="image/bP.png" alt="" class="blackBp asd" id="BpF">
+            </th>
+            <th class="black" id="g7">
+                <img src="image/bP.png" alt="" class="blackBp asd" id="BpG">
+            </th>
+            <th class="white" id="h7">
+                <img src="image/bP.png" alt="" class="blackBp asd" id="BpH">
+            </th>
+            <th style="width: 24px!important;">7</th>
+        </tr>
+        <tr>
+            <th style="width: 24px!important;">6</th>
+            <th class="white" id="a6"></th>
+            <th class="black" id="b6"></th>
+            <th class="white" id="c6"></th>
+            <th class="black" id="d6"></th>
+            <th class="white" id="e6"></th>
+            <th class="black" id="f6"></th>
+            <th class="white" id="g6"></th>
+            <th class="black" id="h6"></th>
+            <th style="width: 24px!important;">6</th>
+        </tr>
+        <tr>
+            <th style="width: 24px!important;">5</th>
+            <th class="black" id="a5"></th>
+            <th class="white" id="b5"></th>
+            <th class="black" id="c5"></th>
+            <th class="white" id="d5"></th>
+            <th class="black" id="e5"></th>
+            <th class="white" id="f5"></th>
+            <th class="black" id="g5"></th>
+            <th class="white" id="h5"></th>
+            <th style="width: 24px!important;">5</th>
+        </tr>
+        <tr>
+            <th style="width: 24px!important;">4</th>
+            <th class="white" id="a4"></th>
+            <th class="black" id="b4"></th>
+            <th class="white" id="c4"></th>
+            <th class="black" id="d4"></th>
+            <th class="white" id="e4"></th>
+            <th class="black" id="f4"></th>
+            <th class="white" id="g4"></th>
+            <th class="black" id="h4"></th>
+            <th style="width: 24px!important;">4</th>
+        </tr>
+        <tr>
+            <th style="width: 24px!important;">3</th>
+            <th class="black" id="a3"></th>
+            <th class="white" id="b3"></th>
+            <th class="black" id="c3"></th>
+            <th class="white" id="d3"></th>
+            <th class="black" id="e3"></th>
+            <th class="white" id="f3"></th>
+            <th class="black" id="g3"></th>
+            <th class="white" id="h3"></th>
+            <th style="width: 24px!important;">3</th>
+        </tr>
+        <tr>
+            <th style="width: 24px!important;">2</th>
+            <th class="white" id="a2">
+                <img src="image/wP.png" alt="" class="whiteBp asd" id="WpA">
+            </th>
+            <th class="black" id="b2">
+                <img src="image/wP.png" alt="" class="whiteBp asd" id="WpB">
+            </th>
+            <th class="white" id="c2">
+                <img src="image/wP.png" alt="" class="whiteBp asd" id="WpC">
+            </th>
+            <th class="black" id="d2">
+                <img src="image/wP.png" alt="" class="whiteBp asd" id="Wpd">
+            </th>
+            <th class="white" id="e2">
+                <img src="image/wP.png" alt="" class="whiteBp asd" id="WpE">
+            </th>
+            <th class="black" id="f2">
+                <img src="image/wP.png" alt="" class="whiteBp asd" id="WpF">
+            </th>
+            <th class="white" id="g2">
+                <img src="image/wP.png" alt="" class="whiteBp asd" id="WpG">
+            </th>
+            <th class="black" id="h2">
+                <img src="image/wP.png" alt="" class="whiteBp asd" id="WpH">
+            </th>
+            <th style="width: 24px!important;">2</th>
+        </tr>
+        <tr>
+            <th style="width: 24px!important;">1</th>
+            <th class="black" id="a1">
+                <img src="image/wR.png" alt="" class="whiteBp wRookH" id="wRookA">
+            </th>
+            <th class="white" id="b1">
+                <img src="image/wN.png" alt="" class="whiteBp wKnightB" id="wKnightB">
+            </th>
+            <th class="black" id="c1">
+                <img src="image/wB.png" alt="" class="whiteBp" id="wBishopC">
+            </th>
+            <th class="white" id="d1">
+                <img src="image/wQ.png" alt="" class="whiteBp" id="wQueen">
+            </th>
+            <th class="black" id="e1">
+                <img src="image/wK.png" alt="" class="whiteBp" id="wKing">
+            </th>
+            <th class="white" id="f1">
+                <img src="image/wB.png" alt="" class="whiteBp" id="wBishopf">
+            </th>
+            <th class="black" id="g1">
+                <img src="image/wN.png" alt="" class="whiteBp wKnightB" id="wKnightG">
+            </th>
+            <th class="white" id="h1">
+                <img src="image/wR.png" alt="" class="whiteBp wRookH" id="wRookH">
+            </th>
+            <th style="width: 24px!important;">1</th>
+        </tr>
+        <tr class="number">
+            <th class="number"></th>
+            <th>a</th>
+            <th>b</th>
+            <th>c</th>
+            <th>d</th>
+            <th>e</th>
+            <th>f</th>
+            <th>g</th>
+            <th>h</th>
+            <th class="number"></th>
+        </tr>
+    </table>
+</body>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous">
+</script>
+<script src="ChessJs.js"></script>
+</html>
